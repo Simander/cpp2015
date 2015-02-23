@@ -7,8 +7,8 @@
 //using namespace std;
 
 class Player{
-	int numberOfCards;
-	int wallet;
+	int _numberOfCards;
+	int _wallet;
 
 	public: 
 		int _points;
