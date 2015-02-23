@@ -111,8 +111,9 @@ int main(){
 	
 	Game game;
 	int menuchoice = -1;
-	cout << "Welcome to simple BlackJack\n"
-		<"----------------------------------------------------------------------\n";
+	cout <<"----------------------------------------------------------------------\n" 
+		 << "Welcome to simple BlackJack\n"
+		 <<"----------------------------------------------------------------------\n";
 	while(game.returnWallet() > 0){
 		
 		srand(time(0)*roundNr);
@@ -123,6 +124,10 @@ int main(){
 	<<"----------------------------------------------------------------------\n";
 	cout << "How much would you like to bet? enter a number between 10 and 100:\n";
 	cin >> game.bet;
+	while(game.bet < 10 || game.bet > 100){
+		cout << "You have to bet a number between 10 and 100, please place a new bet:\n";
+		cin >> game.bet;
+	}
 	cout <<"----------------------------------------------------------------------\n";
 	game.firstRound();
 	
