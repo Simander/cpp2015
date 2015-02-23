@@ -47,9 +47,9 @@ void Dealer::resetStats(){
 	numberOfCards = 0;
 	deck.shuffle();
 	//deck.nullCounter();
-	/*while(!hand.empty())
+	while(!hand.empty())
 		hand.pop_back();
-	*/
+	
 }
 int Dealer::getNumberOfCards(){
 	return numberOfCards;
