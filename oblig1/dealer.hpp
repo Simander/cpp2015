@@ -25,4 +25,3 @@ class Dealer{
 	int getNumberOfCards();
 
 };
-#endif
