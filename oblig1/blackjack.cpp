@@ -81,20 +81,23 @@ void Game::newRound(){
 	dealer.resetStats();
 }
 bool Game::greaterThan21(){
-	if(player.getSum() > 21)
+	if(player.getSum() >= 21)
 		return true;
 	if(dealer.getSum() > 21)
 		return true;
-	else return false;
+	//if(player.getSum() == 21)
+//		return true;
+
+	return false;
 }
 int Game::returnWallet(){
 	return player.getWallet();
 }
 int Game::determineWinner(){
 	//1 for player; 0 for house
-	if(dealer.getSum() > 21 && player.getSum() <= 21 )
-		return 1;
-	else if(player.getSum() == 21)
+	if(player.getSum() == 21)
+		return 2;
+	else if(dealer.getSum() > 21 && player.getSum() < 21 )
 		return 1;
 	else if(player.getSum() > 21)
 		return 0;
@@ -152,6 +155,11 @@ int main(){
 	
 		if(game.determineWinner() == 1){
 			cout << "\nYou win!\n"
+			 <<"----------------------------------------------------------------------\n";
+			game.winOrLose(true);
+		}
+		else if(game.determineWinner() == 2){
+			cout << "\nBLACKJACK!\n"
 			 <<"----------------------------------------------------------------------\n";
 			game.winOrLose(true);
 		}
