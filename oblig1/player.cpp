@@ -33,7 +33,7 @@ bool Player::recieveCard(Card a){
 	else
 		_points+=10;
 
-	if(_points <= 21) 
+	if(_points < 21) 
 		return false;
 	else
 		return true;
@@ -54,4 +54,3 @@ string Player::toString(){
 	s+= "\nYou have: " + to_string(getSum()) + " points";
 	return s;
 }
-
