@@ -8,7 +8,7 @@ using namespace std;
 //Constructor
 Deck::Deck(){			//works c++11
 	
-	counter = 0;
+	_counter = 0;
 		for(int x = 0; x < 48; x++){
 		for(int i = 0; i < 4; i++){
 			for(int j = 1; j < 14; j++){
@@ -47,6 +47,6 @@ void Deck::swapCards(int a, int b){		//works c++11
 
 //Method that deals a single card from the deck and increments counter.
 Card Deck::deal(){
-	counter++;
-	return deck.at(counter-1);
+	_counter++;
+	return deck.at(_counter-1);
 }
