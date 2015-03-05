@@ -8,11 +8,11 @@ OBJECTS=blackjack.o dealer.o player.o card.o deck.o
 EXEC=blackjack
 
 all: $(OBJECTS)
-        $(GCC) $(CCOPT) $(OBJECTS) -o $(EXEC)
+	$(GCC) $(CCOPT) $(OBJECTS) -o $(EXEC)
 
 %.o: %.cpp
-        $(GCC) $(CCOPT) -c $< -o $@
+	$(GCC) $(CCOPT) -c $< -o $@
 
 clean:
-        $(RM) $(OBJECTS)
-        $(RM) $(EXEC)
+	$(RM) $(OBJECTS)
+	$(RM) $(EXEC)
