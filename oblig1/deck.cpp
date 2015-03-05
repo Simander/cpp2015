@@ -27,7 +27,7 @@ Card Deck::getCard(int i){
 //Method for shuffling the deck
 void Deck::shuffle(){	//works c++11
 	srand(time(NULL));
-	counter = 0;
+	_counter = 0;
 	int rand1;
 	int rand2;
 	//splits the deck in half, and swaps random cards from each side of the deck
