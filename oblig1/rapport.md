@@ -9,3 +9,8 @@ Burde være mulig da det funker i java.
 
 Update:
 innså at jeg hadde glemt å laste opp deck.cpp og deck.hpp filene, og jeg hadde limt inn feil kode i player.cpp. Jeg har også oppdaget at random variabelen min og shuffle metoden funker. Hadde bare glemt å poppe cards fra hand vectorene til dealer og player i reset metoden min, slik at de fikk de fortsatt hadde de gamle kortene på samme plass i vektoren. nå er dette fikset og jeg er glad for å kunne si at spillet mitt nå funker :)
+
+
+Nå skal alle filene være her.
+Klassehierarkiet mitt ser slik ut
+<h1>CPP</h1>
