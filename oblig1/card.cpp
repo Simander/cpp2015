@@ -1,5 +1,7 @@
+
 #include "card.hpp"
 #include <string>
+
 using namespace std;
 
 	//Constructor
