@@ -5,28 +5,29 @@
 
 using namespace std;
 
+//Constructor
 Dealer::Dealer(){
-	 numberOfCards = 0;
+	 _numberOfCards = 0;
 	 _points = 0;
 	 
 }
 
-
+//Method for shuffling the deck
 void Dealer::shuffle(){
 	deck.shuffle();
 }
-
+//Method for dealing a single card from the deck.
 Card Dealer::deal(){
 	return deck.deal();
 }
-
+//method for recieving a card returns false if STAND or BLACKJACK
 bool Dealer::recieveCard(){
 	if(_points < 18){
 	
 		hand.push_back(deck.deal());
-		numberOfCards++;
-		if(hand.at(numberOfCards-1).getValue() < 10)
-			_points+= hand.at(numberOfCards-1).getValue();
+		_numberOfCards++;
+		if(hand.at(_numberOfCards-1).getValue() < 10)
+			_points+= hand.at(_numberOfCards-1).getValue();
 		else
 			_points+=10;
 	}
@@ -44,14 +45,14 @@ int Dealer::getSum(){
 }
 void Dealer::resetStats(){
 	_points = 0;
-	numberOfCards = 0;
+	_numberOfCards = 0;
 	deck.shuffle();
-	//deck.nullCounter();
+	//Empties hand
 	while(!hand.empty())
 		hand.pop_back();
 	
 }
 int Dealer::getNumberOfCards(){
-	return numberOfCards;
+	return _numberOfCards;
 }
 
