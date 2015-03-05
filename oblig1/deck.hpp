@@ -8,15 +8,16 @@
 using namespace std;
 
 class Deck{
-	vector<Card> deck;
-	int counter;
+	
+	vector<Card> deck;		//Vector for holding all cards in the deck
+	int _counter;			//counter, counts how many cards have been dealt.
+	
 	public:
-		Deck();
-		//deck.reserve(52);
+		Deck();							//Constructor
 		Card getCard(int i);			//method that returns the card at index i in the deck
-		void shuffle();					//method for shuffling the deck
-		void swapCards(int a, int b);	//part of shuffle
-		Card deal();
+		void shuffle();					//metod for shuffling the deck
+		void swapCards(int a, int b);	//subroutine of the shuffle method
+		Card deal();					//method that deals a single card from the deck
 
 };
 #endif
