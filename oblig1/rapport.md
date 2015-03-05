@@ -20,6 +20,6 @@ Jeg sleit litt med å #include av egne klasser,før jeg fant ut at jeg måtte de
 
 Problemet nå var å luke ut feil med tanke på hva som skjer når en ny runde startes, samt å implementere spilleregler. Jeg trodde først at random generatoren i shuffle metoden min ikke fungerte da man fikk samme sekvens av kort for hver ny runde av et spill. Jeg fant etterhvert ut at det ikke var noe gærent med shuffle metoden min, men at jeg rett og slett hadde glemt å tømme hand vectoren til player, slik at spilleren beholdt kortene fra forrige runde mens de nye ble lagt etter disse i vektoren. Da jeg hadde satt tilbake counteren som teller antall kort i hånden til 0 førte det til at spilleren bare så de samme kortene fra forrige runde. 
 
-Jeg synes det var en utfordrende oblig. Tror det var ganske lærerikt, c++ virker ikke like forvirrende og frustrerende som det gjorde først.
+Jeg synes det var en utfordrende oblig. Og jeg prøvde å gjøre blackjack delen så enkel og oversiktlig som jeg kunne, for lettere å kunne oppdage feil. Tror det var ganske lærerikt, c++ virker ikke like forvirrende og frustrerende som det gjorde først.
 
 <h6>Anders S. Simonsen s198739</h6>
