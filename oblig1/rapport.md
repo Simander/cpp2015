@@ -26,5 +26,12 @@ Jeg synes det var en utfordrende oblig. Og jeg prøvde å gjøre blackjack delen
 - En kortstokk
 - Konge, Dame og knekt er 10 poeng
 - Ess er 1 eller 11 poeng avhengig av hva som gir best hånd.
-- Hvis man for mer enn 21 poeng er det 
+- Spilleren kan satse et beløp mellom 10 og 100 units.
+- Hvis spilleren får mer enn 21 poeng er det BUST, spilleren taper det han satset.
+- Hvis dealeren får mer enn 21 poeng vinner spilleren det han har satset.
+- Hvis spilleren får 21 poeng har han BLACKJACK og spilleren vinner det han satset ganger 2.
+- Hvis dealeren får 21 poeng har han BLACKJACK.
+- Hvis både spilleren og dealeren får like mange poeng er det PUSH, ingen vinner, med mindre begge har BLACKJACK, da   vinner spilleren.
+- Det er om å gjøre å ha høyere poengsum enn dealeren, eller BLACKJACK ved endt spill.
+
 <h6>Anders S. Simonsen s198739</h6>
