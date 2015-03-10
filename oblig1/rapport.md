@@ -5,12 +5,13 @@
   Var ikke lett å finne forståelige eksempler eller tutorials på nettet som gikk nok i dybden til å gi meg noen ide om hvordan det kunne gjøres.
   Jeg fikk det etterhvert til ved å ta "byte for byte"(8-bit) til char, ved å først ta de første 8bitene og gjøre til char og så bitforskyve for å få neste char.
 
-På den med Caesars cipher kryptering gjorde jeg på samme måten, også lagde jeg en enkel løkke som løp gjennom 1 til 24 shifts og -1 til -24) shifts, og så gikk jeg gjennom resultatet til jeg fant ut hvilken offset/shift -verdi som ga best leselig resultat.
+På den med Caesars cipher kryptering gjorde jeg på samme måten, også lagde jeg en enkel for løkke som løp gjennom 1 til 24 shifts og -1 til -24) shifts og printet resultatet for hver shift, så gikk jeg gjennom resultatet til jeg fant ut hvilken offset/shift -verdi som ga best leselig resultat.
+
   
 <h3>BLACKJACK</h3>
-Nå skal alle filene være her. innså at jeg hadde glemt noen.
+//Nå skal alle filene være her. innså at jeg hadde glemt noen.
 
-<h5>Regler jeg har tatt utgangspunkt i:</h5>
+<h5>Spillregler jeg har tatt utgangspunkt i:</h5>
 - En spiller & dealer
 - En kortstokk
 - Konge, Dame og knekt er 10 poeng
