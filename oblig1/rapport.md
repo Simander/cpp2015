@@ -1,7 +1,7 @@
 <h1>RAPPORT OBLIG 1 CPP</h1>
 
 <h3>OPPVARMING</h3>
-  Oppvarmingsoppgaven var litt vrien da det tok litt tid å finne ut hvordan man kunne oversette beskjedene til char-arrays.
+  Oppvarmingsoppgaven var litt vrien, og det tok litt tid å finne ut hvordan man kunne oversette beskjedene til char-arrays.
   Var ikke lett å finne forståelige eksempler eller tutorials på nettet som gikk nok i dybden til å gi meg noen ide om hvordan det kunne gjøres.
   Jeg fikk det etterhvert til ved å ta "byte for byte"(8-bit) til char, ved å først ta de første 8bitene og gjøre til char og så bitforskyve for å få neste char.
 
