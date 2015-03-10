@@ -9,7 +9,7 @@ På den med Caesars cipher kryptering gjorde jeg på samme måten, også lagde j
 
   
 <h3>BLACKJACK</h3>
-//Nå skal alle filene være her. innså at jeg hadde glemt noen.
+//Nå skal alle filene være her. Innså at jeg hadde glemt noen.
 
 <h5>Spillregler jeg har tatt utgangspunkt i:</h5>
 - En spiller & dealer
