@@ -7,6 +7,8 @@
 <h3>BLACKJACK</h3>
 Nå skal alle filene være her. innså at jeg hadde glemt noen.
 
+Jeg ville gjøre det så enkelt som mulig, men samtidig objekt-orientert. En klasse for kort, og en klasse for deck(kortstokken) med en vector av kort-objekter, En klasse for Dealeren som har et deck-objekt samt en vector for kortene i hans hånd under et spill, de som er trukket til seg fra kortstokken. Samt metoder for å shuffle og deale kort fra deck. Disse metodene ble egentlig bare "tomme" metoder som kalte på metodene fra deck-object hvor shuffle og deal metodene allerede ligger. I retrospekt kunne jeg utelukket hele deck-klassen og gjort den som en vector deck i dealer klassen og kodet shuffle og deal i dealer klassen, dette gir litt mere mening. Så kommer spiller klassen med sin egen vector som representerer kortene dealeren har gitt han fra kortstokken, samt relevante metoder. Deretter en klasse Game som holder ulike metoder for spilleren og dealeren, samt sammenligninger. Main metoden brukes som en gameloop, som tar i bruk metodene fra et Game-objekt til å drive spillet fremover. Under er en liten oversikt over klassene og hvilke filer de ligger i, samt et primitivt klassediagram:
+
 <h5>Klasser:</h5>
   - Card    (Card.cpp & Card.hpp)
   - Deck    (Deck.cpp & Deck.hpp)
@@ -20,7 +22,7 @@ Jeg sleit litt med å #include av egne klasser,før jeg fant ut at jeg måtte de
 
 Problemet nå var å luke ut feil med tanke på hva som skjer når en ny runde startes, samt å implementere spilleregler. Jeg trodde først at random generatoren i shuffle metoden min ikke fungerte da man fikk samme sekvens av kort for hver ny runde av et spill. Jeg fant etterhvert ut at det ikke var noe gærent med shuffle metoden min, men at jeg rett og slett hadde glemt å tømme hand vectoren til player, slik at spilleren beholdt kortene fra forrige runde mens de nye ble lagt etter disse i vektoren. Da jeg hadde satt tilbake counteren som teller antall kort i hånden til 0 førte det til at spilleren bare så de samme kortene fra forrige runde. 
 
-Jeg synes det var en utfordrende oblig. Og jeg prøvde å gjøre blackjack delen så enkel og oversiktlig som jeg kunne, for lettere å kunne oppdage feil. Tror det var ganske lærerikt, c++ virker ikke like forvirrende og frustrerende som det gjorde først.
+Jeg synes det var en utfordrende og vanskelig oblig. Jeg prøvde å gjøre blackjack delen så enkel og oversiktlig som jeg kunne, for lettere å kunne oppdage feil. Har lært mye, c++ virker ikke like forvirrende og frustrerende som det gjorde til å begynne med.
 <h5>Regler jeg har tatt utgangspunkt i:</h5>
 - En spiller & dealer
 - En kortstokk
