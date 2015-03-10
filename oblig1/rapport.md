@@ -5,7 +5,7 @@
   Var ikke lett å finne forståelige eksempler eller tutorials på nettet som gikk nok i dybden til å gi meg noen ide om hvordan det kunne gjøres.
   Jeg fikk det etterhvert til ved å ta "byte for byte"(8-bit) til char, ved å først ta de første 8bitene og gjøre til char og så bitforskyve for å få neste char.
 
-På den med Caesars cipher kryptering gjorde jeg på samme måten, også lagde jeg en enkel for løkke som løp gjennom 1 til 24 shifts og -1 til -24) shifts og printet resultatet for hver shift, så gikk jeg gjennom resultatet til jeg fant ut hvilken offset/shift -verdi som ga best leselig resultat.
+På den med Caesars cipher kryptering gjorde jeg på samme måten, også lagde jeg en enkel for løkke som løp gjennom 1 til 24 shifts og -1 til -24) shifts og printet resultatet for hver shift, så gikk jeg gjennom resultatet til jeg fant ut hvilken offset/shift -verdi som ga best leselig resultat, det var -6 som offset.
 
   
 <h3>BLACKJACK</h3>
@@ -44,8 +44,7 @@ Jeg sleit litt med å #include av egne klasser,før jeg fant ut at jeg måtte de
 Problemet nå var å luke ut feil med tanke på hva som skjer når en ny runde startes, samt å implementere spilleregler. Jeg trodde først at random generatoren i shuffle metoden min ikke fungerte da man fikk samme sekvens av kort for hver ny runde av et spill. Jeg fant etterhvert ut at det ikke var noe gærent med shuffle metoden min, men at jeg rett og slett hadde glemt å tømme hand vectoren til player, slik at spilleren beholdt kortene fra forrige runde mens de nye ble lagt etter disse i vektoren. Da jeg hadde satt tilbake counteren som teller antall kort i hånden til 0 førte det til at spilleren bare så de samme kortene fra forrige runde. 
 
 <h5>Konklusjon:</h5>
-Jeg synes dette var en utfordrende og vanskelig oblig. Jeg prøvde å gjøre blackjack delen så enkel og oversiktlig som jeg kunne, for lettere å kunne oppdage feil. Har lært mye, og det er mange ting jeg ville gjort annerledes om jeg hadde kodet den helt på nytt. C++ virker ikke like forvirrende og frustrerende som det gjorde til å begynne med. Begynner å synes det er litt interessant og litt gøyalt.
-
+Jeg synes dette var en utfordrende og vanskelig oblig. Jeg prøvde å gjøre blackjack delen så enkel og oversiktlig som jeg kunne, for lettere å kunne oppdage feil. Har lært mye, og det er mange ting jeg ville gjort annerledes om jeg hadde kodet den helt på nytt. C++ virker ikke like forvirrende og frustrerende som det gjorde til å begynne med. Begynner å synes det er interessant og litt gøyalt. Jeg tror jeg hang meg litt opp i oppvarmingen denne gangen, og brukte noen dager på å forstå denne, så begynte jeg først på Blackjack delen 3 dager før innleveringa, uten å ha noe peiling på Make eller .hpp filer og includes, så ble litt stress med innleveringa. Trur jeg skal starte litt tidligere på hoveddelen neste gang.
 
 
 <h6>Anders S. Simonsen s198739</h6>
