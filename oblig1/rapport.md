@@ -6,7 +6,10 @@
   Jeg fikk det etterhvert til ved å ta "byte for byte"(8-bit) til char, ved å først ta de første 8bitene og gjøre til char og så bitforskyve for å få neste char.
 
 På den med Caesars cipher kryptering gjorde jeg på samme måten, også lagde jeg en enkel for løkke som løp gjennom 1 til 24 shifts og -1 til -24) shifts og printet resultatet for hver shift, så gikk jeg gjennom resultatet til jeg fant ut hvilken offset/shift -verdi som ga best leselig resultat, det var -6 som offset.
-
+<h5>OUTPUT(RESULTAT)</h5>
+- Message 1: Gr8Code
+- Message 2: Bjarne wouldn't like this!
+- Message 3: CAESAR CAMPS NEAR THE SABIS
   
 <h3>BLACKJACK</h3>
 //Nå skal alle filene være her. Innså at jeg hadde glemt noen.
